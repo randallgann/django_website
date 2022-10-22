@@ -19,7 +19,7 @@ class NewVisitorTest(unittest.TestCase):
             self.browser.get('http://localhost:8000')
     
             # She notices the page title and header mention alabaster trailer
-            self.assertIn('Alabaster Trailer', self.browser.title)
+            self.assertIn('Trailer Bookings', self.browser.title)
             self.fail('Finish the test!')
 
             # She is invited to choose a date and time to rent the trailer.
