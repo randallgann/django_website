@@ -20,13 +20,15 @@ class NewVisitorTest(unittest.TestCase):
     
             # She notices the page title and header mention alabaster trailer
             self.assertIn('Trailer Bookings', self.browser.title)
-            self.fail('Finish the test!')
+            header_text = self.browser.find_element_by_tag_name('h1').text
+            self.assertIn('Book Alabaster Trailer', header_text)
 
-            # She is invited to choose a date and time to rent the trailer.
+            # She is invited to choose a date and time to rent the trailer from the tailwind css calendar.
+
 
 
             # She chooses a date and time and clicks the 'Rent' button.
-
+            self.fail('Finish the test!')
             # She is taken to a page that shows her the date and time she has chosen.
 
 if __name__ == '__main__':

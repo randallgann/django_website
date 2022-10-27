@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home_page(request):
-    return HttpResponse('<html><title>Trailer Bookings</title></html>')
+    return HttpResponse('<html><title>Trailer Bookings</title><h1>Book Alabaster Trailer</h1></html>')
